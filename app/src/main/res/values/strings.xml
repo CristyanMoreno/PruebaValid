@@ -3,4 +3,6 @@
     <string name="title_top_tracks">Top Artists</string>
     <string name="title_top_artists">Top Tracks</string>
     <string name="api_key" translatable="false">829751643419a7128b7ada50de590067</string>
+    <string name="text_listeners">Listening:</string>
+    <string name="text_duration">seconds</string>
 </resources>

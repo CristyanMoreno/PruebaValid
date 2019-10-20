@@ -30,7 +30,7 @@ public class Track {
     @SerializedName("image")
     @Expose
     private List<Image> image = null;
-    @SerializedName("@inAttr")
+    @SerializedName("@attr")
     @Expose
     private InAttr inAttr;
 

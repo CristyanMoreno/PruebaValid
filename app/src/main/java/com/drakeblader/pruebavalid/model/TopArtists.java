@@ -1,23 +1,24 @@
 package com.drakeblader.pruebavalid.model;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.util.ArrayList;
 
 public class TopArtists {
 
     @SerializedName("artist")
     @Expose
-    private List<Artist> artist = null;
+    private ArrayList<Artist> artist = null;
     @SerializedName("@attr")
     @Expose
     private Attr attr;
 
-    public List<Artist> getArtist() {
+    public ArrayList<Artist> getArtist() {
         return artist;
     }
 
-    public void setArtist(List<Artist> artist) {
+    public void setArtist(ArrayList<Artist> artist) {
         this.artist = artist;
     }
 

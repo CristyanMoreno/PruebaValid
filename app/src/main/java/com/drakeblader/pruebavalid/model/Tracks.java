@@ -1,5 +1,6 @@
 package com.drakeblader.pruebavalid.model;
 
+import java.util.ArrayList;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -8,16 +9,16 @@ public class Tracks {
 
     @SerializedName("track")
     @Expose
-    private List<Track> track = null;
+    private ArrayList<Track> track = null;
     @SerializedName("@attr")
     @Expose
     private Attr attr;
 
-    public List<Track> getTrack() {
+    public ArrayList<Track> getTrack() {
         return track;
     }
 
-    public void setTrack(List<Track> track) {
+    public void setTrack(ArrayList<Track> track) {
         this.track = track;
     }
 

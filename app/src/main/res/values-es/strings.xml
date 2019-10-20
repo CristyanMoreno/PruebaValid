@@ -3,4 +3,6 @@
     <string name="app_name">PruebaValid</string>
     <string name="title_top_artists">Top Canciones</string>
     <string name="title_top_tracks">Top Artistas</string>
+    <string name="text_listeners">"Escuchando: "</string>
+    <string name="text_duration">segundos</string>
 </resources>
