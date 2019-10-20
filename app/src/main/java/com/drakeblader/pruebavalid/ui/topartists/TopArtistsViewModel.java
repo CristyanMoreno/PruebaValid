@@ -1,16 +1,16 @@
-package com.drakeblader.pruebavalid.ui.home;
+package com.drakeblader.pruebavalid.ui.topartists;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class TopArtistsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public TopArtistsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is Top Artists fragment");
     }
 
     public LiveData<String> getText() {

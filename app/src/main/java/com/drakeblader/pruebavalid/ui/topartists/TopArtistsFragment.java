@@ -1,4 +1,4 @@
-package com.drakeblader.pruebavalid.ui.home;
+package com.drakeblader.pruebavalid.ui.topartists;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.drakeblader.pruebavalid.R;
 
-public class HomeFragment extends Fragment {
+public class TopArtistsFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private TopArtistsViewModel topArtistsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
-        homeViewModel.getText().observe(this, new Observer<String>() {
+        topArtistsViewModel =
+                ViewModelProviders.of(this).get(TopArtistsViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_top_artists, container, false);
+        final TextView textView = root.findViewById(R.id.text_top_artists);
+        topArtistsViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
