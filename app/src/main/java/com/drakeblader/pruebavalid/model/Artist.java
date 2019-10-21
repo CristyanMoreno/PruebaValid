@@ -1,26 +1,45 @@
 package com.drakeblader.pruebavalid.model;
 
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+import androidx.room.TypeConverters;
+
 import java.util.List;
+
+import com.drakeblader.pruebavalid.utils.DataTypeConverter;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+
+@Entity(tableName = "artist")
 public class Artist {
 
+    @PrimaryKey
+    @NonNull
+    @ColumnInfo(name = "name")
     @SerializedName("name")
     @Expose
     private String name;
+    @ColumnInfo(name = "listeners")
     @SerializedName("listeners")
     @Expose
     private String listeners;
+    @ColumnInfo(name = "mbid")
     @SerializedName("mbid")
     @Expose
     private String mbid;
+    @ColumnInfo(name = "url")
     @SerializedName("url")
     @Expose
     private String url;
+    @ColumnInfo(name = "streamable")
     @SerializedName("streamable")
     @Expose
     private String streamable;
+    @ColumnInfo(name = "image")
+    @TypeConverters(DataTypeConverter.class)
     @SerializedName("image")
     @Expose
     private List<Image> image = null;
